@@ -1,5 +1,4 @@
 import bcrypt from "bcrypt";
-import { User } from "@/generated/prisma";
 import UserService from "../users/UserService";
 import { JWT } from "@fastify/jwt";
 
