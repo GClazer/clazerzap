@@ -13,7 +13,7 @@ const server: FastifyInstance = fastify();
 
 server.register(jwt, {
   secret: process.env.SECRET_JWT_KEY,
-  cookie: { cookieName: "token" },
+  cookie: { cookieName: "token", signed: true },
 });
 
 server.register(cors, {
